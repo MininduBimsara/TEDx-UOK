@@ -1,4 +1,4 @@
-export default function ContactPage() {
+/*export default function ContactPage() {
 	return (
 		<div className="px-6 py-12">
 			<div className="max-w-4xl mx-auto">
@@ -8,3 +8,4 @@ export default function ContactPage() {
 		</div>
 	);
 }
+*/

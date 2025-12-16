@@ -1,5 +1,6 @@
-import SpeakersListPage from './SpeakersListPage';
+/*import SpeakersListPage from './SpeakersListPage';
 
 export default function SpeakersPage() {
   return <SpeakersListPage />;
 }
+*/

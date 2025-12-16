@@ -1,4 +1,4 @@
-import Wordmark from '../../components/ui/Wordmark';
+/*import Wordmark from '../../components/ui/Wordmark';
 
 export default function HomePage() {
   return (
@@ -11,3 +11,4 @@ export default function HomePage() {
     </div>
   );
 }
+*/
