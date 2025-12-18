@@ -6,6 +6,7 @@ type CardProps = {
 	role?: string;
 };
 
+
 export default function Card({ children, className = '', role = 'article' }: CardProps) {
 	return (
 		<article role={role} className={`card-core p-6 ${className}`}>

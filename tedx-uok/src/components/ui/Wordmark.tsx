@@ -14,4 +14,5 @@ export default function Wordmark({ event = 'UOK', className = '' }: WordmarkProp
       <span className="text-white">{event}</span>
     </div>
   );
+
 }

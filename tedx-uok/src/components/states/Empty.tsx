@@ -4,4 +4,5 @@ export default function Empty({ message = 'No results.' }: { message?: string })
       <div className="text-sm">{message}</div>
     </div>
   );
+
 }

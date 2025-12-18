@@ -9,4 +9,5 @@ export default function Error({ message = 'Something went wrong.', onRetry }: { 
       )}
     </div>
   );
+
 }

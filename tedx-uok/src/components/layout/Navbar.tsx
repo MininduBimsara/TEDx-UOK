@@ -241,7 +241,7 @@ export default function Navbar() {
         </nav>
       </div>
 
-      {/* Overlay when drawer open */}
+      {/* Overlay when drawer op*/}
       {open && (
         <button
           onClick={() => setOpen(false)}

@@ -6,6 +6,7 @@ interface ErrorStateProps {
     onRetry?: () => void;
 }
 
+
 export default function ErrorState({
     title = 'Something went wrong',
     message = 'We encountered an error while loading this content.',

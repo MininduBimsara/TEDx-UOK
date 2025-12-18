@@ -14,4 +14,5 @@ export default function Section({ id, title, children, className = '' }: Section
       <div>{children}</div>
     </section>
   );
+
 }
