@@ -16,9 +16,7 @@ const footerLinks = {
   ],
   legal: [
     { name: "Privacy Policy", href: "/privacy" },
-    { name: "Accessibility", href: "/accessibility" },
-    { name: "Code of Conduct", href: "/code-of-conduct" },
-    { name: "Licensing", href: "/licensing" },
+    { name: "Terms of Service", href: "/terms" },
     {
       name: "TEDx Rules",
       href: "https://www.ted.com/about/our-organization/our-policies-terms/tedx-rules",
@@ -39,7 +37,7 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-black text-white border-t border-white/10 mt-auto">
-      <div className="max-w-7xl mx-auto px-6 py-16">
+      <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1 flex flex-col items-start space-y-6">
@@ -49,7 +47,7 @@ export default function Footer() {
             >
               <span className="relative inline-block text-[#EB0028]">
                 <span>TED</span>
-                <span className="absolute top-[-20%]">x</span>
+                <span className="absolute top-[-10%]">x</span>
                 <span className="opacity-0">x</span>
               </span>
               <span className="text-white">UOK</span>
@@ -161,7 +159,7 @@ export default function Footer() {
             This independent{" "}
             <span className="relative inline-block font-extrabold">
               <span>TED</span>
-              <span className="absolute top-[-20%]">x</span>
+              <span className="absolute top-[-10%]">x</span>
               <span className="opacity-0">x</span>
             </span>{" "}
             event is operated under license from TED.

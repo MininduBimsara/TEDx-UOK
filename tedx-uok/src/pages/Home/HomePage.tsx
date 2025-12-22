@@ -4,8 +4,8 @@ import CTASection from "../../components/CTASection";
 import Hero from "../../components/Hero";
 import Highlights, { type Highlight } from "../../components/Highlights";
 import Speakers, { type Speaker } from "../../components/Speakers";
-import Footer from "../../components/layout/Footer";
-import Navbar from "../../components/layout/Navbar";
+// import { Footer } from "../../components/layout/Footer";
+// import { Navbar } from "../../components/layout/Navbar";
 import { Handshake, Lightbulb, Mic2, Users } from "lucide-react";
 import { useEffect } from "react";
 
@@ -79,14 +79,14 @@ const HomePage = () => {
 
   return (
     <main className="min-h-screen bg-background">
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <Countdown date="2026-03-15T08:00:00" />
       <About />
       <Highlights highlights={highlights} />
       <Speakers speakers={speakers} />
       <CTASection />
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 };
