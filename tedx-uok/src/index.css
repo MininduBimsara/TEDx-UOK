@@ -36,14 +36,14 @@
 @layer base {
   :root {
     /* TEDx Official Colors */
-    --tedx-red: 348 100% 46%;
-    --tedx-black: 0 0% 0%;
-    --tedx-white: 0 0% 100%;
-
+    --tedx-red: 348 100% 46%; 
+    --tedx-black: 0 0% 0%;    
+    --tedx-white: 0 0% 100%; 
+    
     /* Card styling */
-    --card-dark: 0 0% 5.5%;
-    --card-border: 0 0% 12%;
-
+    --card-dark: 0 0% 5.5%;   
+    --card-border: 0 0% 12%;  
+    
     /* Shadcn/UI Compatible Tokens */
     --background: 0 0% 0%;
     --foreground: 0 0% 100%;
@@ -110,6 +110,7 @@
   }
 }
 
+
 @layer base {
   * {
     @apply border-border;
@@ -128,17 +129,12 @@
     min-height: 100vh;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h1, h2, h3, h4, h5, h6 {
     font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
-    font-weight: 800;
+    font-weight: 800; 
     letter-spacing: 0;
   }
-
+  
   a {
     font-weight: 500;
     text-decoration: inherit;
@@ -163,6 +159,45 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes countdown-pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+@layer utilities {
+  .animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.4s ease-out forwards;
+  }
+
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .animation-delay-500 {
+    animation-delay: 500ms;
   }
 }
 

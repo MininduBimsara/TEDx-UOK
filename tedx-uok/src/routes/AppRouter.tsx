@@ -5,7 +5,8 @@ import HomePage from "../pages/Home/HomePage";
 // import AboutPage from "../pages/About/AboutPage";
 // import SpeakersPage from "../pages/Speakers/SpeakersPage";
 import RegistrationPage from "../pages/Registration/RegistrationPage";
-import Theme from "../pages/Theme/Theme";
+import Agenda from "../pages/Agenda/AgendaPage";
+// import Theme from "../pages/Theme/Theme";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -21,10 +22,10 @@ function AnimatedRoutes() {
         }
       />
       <Route
-        path="/theme"
+        path="/agenda"
         element={
           <div key={location.pathname} className="page-transition">
-            <Theme />
+            <Agenda />
           </div>
         }
       />
