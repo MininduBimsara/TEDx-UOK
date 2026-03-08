@@ -1,7 +1,7 @@
 import React from "react";
 import { supabase } from "../../lib/supabase";
-
-type TableInsert<_T extends string> = Record<string, unknown>;
+import { useSEO } from "../../hooks/useSEO";
+import { seoConfig } from "../../config/seo";
 
 interface FormData {
   full_name: string;
@@ -179,12 +179,10 @@ const FormSelect = ({
   );
 };
 
-import { useSEO } from "../../hooks/useSEO";
-import { seoConfig } from "../../config/seo";
-
 const VolunteersPage: React.FC = () => {
   // Set body background to black when component mounts
   useSEO(seoConfig.volunteers);
+
   React.useEffect(() => {
     document.body.style.backgroundColor = "#000000";
     document.body.style.margin = "0";
@@ -197,6 +195,7 @@ const VolunteersPage: React.FC = () => {
       document.documentElement.style.backgroundColor = "";
     };
   }, []);
+
   const [formData, setFormData] = React.useState<FormData>({
     full_name: "",
     email: "",
@@ -214,18 +213,6 @@ const VolunteersPage: React.FC = () => {
   const [selectedFile, setSelectedFile] = React.useState<File | null>(null);
   const [uploadProgress, setUploadProgress] = React.useState<number>(0);
   const [isUploading, setIsUploading] = React.useState(false);
-
-  React.useEffect(() => {
-    document.body.style.backgroundColor = "#000000";
-    document.body.style.margin = "0";
-    document.body.style.padding = "0";
-    document.documentElement.style.backgroundColor = "#000000";
-
-    return () => {
-      document.body.style.backgroundColor = "";
-      document.documentElement.style.backgroundColor = "";
-    };
-  }, []);
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -360,7 +347,8 @@ const VolunteersPage: React.FC = () => {
       }
 
       // Insert volunteer application
-      const volunteerData: TableInsert<"volunteer_applications"> = {
+      // Changed Type to 'any' to fix the TableInsert build error
+      const volunteerData: any = {
         event_id: eventId,
         full_name: formData.full_name,
         email: formData.email,
@@ -444,14 +432,16 @@ const VolunteersPage: React.FC = () => {
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
               <h1
-                className="text-4xl sm:text-5xl font-bold mb-4"
+                className="text-3xl sm:text-4xl font-bold mb-4"
                 style={{ color: "#FFFFFF", letterSpacing: "0" }}
               >
                 Volunteer Application for{" "}
                 <span style={{ color: "#EB0028" }}>
                   TED<sup style={{ color: "#EB0028" }}>x</sup>
                 </span>{" "}
-                <span style={{ color: "#FFFFFF" }}>UoK</span>
+                <span style={{ color: "#FFFFFF", fontWeight: "normal" }}>
+                  UoK
+                </span>
               </h1>
               <p
                 className="text-gray-400 text-lg mb-4"
