@@ -230,7 +230,7 @@ export function SpeakerDetailPage() {
                   className="text-white"
                   style={{ fontWeight: 600, fontSize: "28px" }}
                 >
-                  TEDx Talk
+                  TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> Talk
                 </h2>
                 <h3
                   className="text-[#EB0028] text-2xl"

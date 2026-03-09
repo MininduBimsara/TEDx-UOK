@@ -205,7 +205,7 @@ const PartnersPage: React.FC = () => {
           <div>
             <h1 className={sharedStyles.typography.brandTitle}>
               <span className={sharedStyles.colors.tedxRed}>
-                TED<sup>x</sup>
+                TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup>
               </span>
               <span className={`${sharedStyles.colors.white} font-normal`}> UoK</span>
             </h1>
@@ -276,7 +276,7 @@ const PartnersPage: React.FC = () => {
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-8 leading-tight">
             Join us at{" "}
             <span className={sharedStyles.colors.tedxRed}>
-              TED<sup>x</sup>
+              TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup>
             </span>
             <span className={`${sharedStyles.colors.black} font-normal`}> UoK</span> 2026
           </h2>

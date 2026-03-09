@@ -16,9 +16,10 @@ const ComingSoon: React.FC = () => {
         {/* TEDx Logo */}
         <div className="mb-12 flex justify-center transform hover:scale-105 transition-transform duration-500">
           <div className="flex items-center">
-            <span className="text-primary font-bold text-5xl md:text-7xl tracking-tighter">TED</span>
-            <sup className="text-primary text-2xl md:text-3xl font-bold align-super top-[-0.5em] mx-1">x  </sup>
-            <span className="text-foreground font-bold text-5xl md:text-7xl tracking-tighter">University of  Kelaniya</span>
+            <span className="relative inline-block font-bold text-5xl md:text-7xl tracking-tighter text-[#EB0028]">
+              TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup>
+            </span>
+            <span className="text-foreground font-normal text-5xl md:text-7xl tracking-tighter ml-2">University of Kelaniya</span>
           </div>
         </div>
 

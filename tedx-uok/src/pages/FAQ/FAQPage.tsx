@@ -134,7 +134,7 @@ export default function FAQPage() {
             Frequently <span className="text-[#EB0028]">Asked Questions</span>
           </h1>
           <p className="mx-auto max-w-2xl text-white">
-            Answers to common questions about attending TED<sup>x</sup> UoK.
+            Answers to common questions about attending TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> UoK.
           </p>
         </div>
 

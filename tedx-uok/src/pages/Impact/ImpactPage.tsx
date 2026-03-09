@@ -128,7 +128,7 @@ const ImpactPage = () => {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-6 text-white">Our Mission</h2>
           <p className="text-xl text-gray-300 font-light leading-relaxed">
-            At TED<sup>x</sup>UOK, we believe that ideas have the power to
+            At TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup>UOK, we believe that ideas have the power to
             change attitudes, lives, and ultimately, the world. Our social
             impact initiatives aim to foster sustainability, community growth,
             and inclusive dialogue, creating a ripple effect of positive change

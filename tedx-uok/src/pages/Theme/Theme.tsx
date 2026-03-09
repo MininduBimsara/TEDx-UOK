@@ -57,7 +57,7 @@ const Theme = () => {
       <section className="pt-24 pb-16 md:pt-32 md:pb-24 px-6">
         <div className="container mx-auto">
           <p className="text-sm font-medium text-primary tracking-widest uppercase mb-4 opacity-0 animate-fade-in-up">
-            TEDxUOK 2026 Theme
+            TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> UoK 2026 Theme
           </p>
           <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] mb-8 opacity-0 animate-fade-in-up animation-delay-100">
             <span className="text-foreground">Breaking</span>

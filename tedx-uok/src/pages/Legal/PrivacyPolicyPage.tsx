@@ -18,7 +18,7 @@ export default function PrivacyPolicyPage() {
           {/* Contented */}
           <div className="space-y-8 text-white leading-relaxed text-center">
             <p className="text-lg">
-              TEDx UOK is committed to protecting your privacy. This policy
+              TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> UoK is committed to protecting your privacy. This policy
               explains how we collect, use, and safeguard your personal
               information.
             </p>

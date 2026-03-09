@@ -127,7 +127,7 @@ const PressMedia = () => {
           </h1>
           <p className="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
             Resources and information for journalists, bloggers, and media
-            professionals covering TED<sup>x</sup> UoK 2025.
+            professionals covering TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> UoK 2025.
           </p>
         </div>
 
@@ -192,12 +192,12 @@ const PressMedia = () => {
               <div>
                 <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
                   <span className="text-[#EB0028]">
-                    TED<sup>x</sup>
+                    TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup>
                   </span>{" "}
                   <span className="font-normal">UoK</span> 2025
                 </h3>
                 <p className="text-gray-300 mb-6 leading-relaxed">
-                  TED<sup>x</sup>UoK is an independently organized TED event at
+                  TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup>UoK is an independently organized TED event at
                   the University of Kelaniya, bringing together thinkers,
                   innovators, and creators to share ideas worth spreading. Our
                   2025 theme "Beyond Horizons" explores the future of
@@ -329,7 +329,7 @@ const PressMedia = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { label: "First TED<sup>x</sup>UoK Event", value: "2018" },
+              { label: <>First TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup>UoK Event</>, value: "2018" },
               { label: "Total Attendees (2024)", value: "450+" },
               { label: "Speakers Featured", value: "50+" },
               { label: "Countries Represented", value: "15+" },
@@ -341,10 +341,9 @@ const PressMedia = () => {
                 <div className="text-4xl font-bold text-white mb-2">
                   {fact.value}
                 </div>
-                <div
-                  className="text-gray-400"
-                  dangerouslySetInnerHTML={{ __html: fact.label }}
-                />
+                <div className="text-gray-400">
+                  {fact.label}
+                </div>
               </div>
             ))}
           </div>

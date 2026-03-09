@@ -16,7 +16,7 @@ const ThemePage = () => {
 
       <Section className="prose prose-invert max-w-4xl mx-auto px-6">
         <p className="text-xl text-gray-300 leading-relaxed mb-8">
-          The theme for TEDxUOK 2026 is <strong>"Horizons"</strong>.
+          The theme for TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> UoK 2026 is <strong>"Horizons"</strong>.
         </p>
         <p className="text-gray-400 mb-6">
           Horizons represent the line where the earth meets the sky—a boundary

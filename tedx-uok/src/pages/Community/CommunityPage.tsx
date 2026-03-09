@@ -360,7 +360,7 @@ const CommunityRegistrationPage: React.FC = () => {
                     Registration Successful!
                   </h3>
                   <p className="text-gray-300">
-                    Welcome to the TEDxUoK community. We'll be in touch soon
+                    Welcome to the TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> UoK community. We'll be in touch soon
                     with exclusive updates.
                   </p>
                 </div>
@@ -480,7 +480,7 @@ const CommunityRegistrationPage: React.FC = () => {
                   Join Community
                 </button>
                 <p className="text-gray-500 text-xs text-center mt-4">
-                  By joining, you agree to receive updates from TEDxUoK
+                  By joining, you agree to receive updates from TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> UoK
                   regarding events and community news.
                 </p>
               </div>

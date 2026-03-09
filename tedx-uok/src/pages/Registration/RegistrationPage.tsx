@@ -296,7 +296,7 @@ export const RegistrationPage: React.FC = () => {
             Event <span className="text-[#EB0028]">Registration</span>
           </h1>
           <p className="text-gray-400 text-lg">
-            Secure your spot at TEDx University of Kelaniya
+            Secure your spot at TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> University of Kelaniya
           </p>
         </div>
 

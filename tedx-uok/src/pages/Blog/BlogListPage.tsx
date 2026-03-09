@@ -25,7 +25,7 @@ export default function BlogListPage() {
         {/* Header - Minimal "r." style from inspiration, adapted to TEDx */}
         <div className="mb-16">
           <span className="font-bold text-2xl tracking-tighter">
-            <span style={{ color: '#EB0028' }}>TED<sup>x</sup></span><span className="text-white font-normal"> UoK</span>
+            <span style={{ color: '#EB0028' }}>TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup></span><span className="text-white font-normal"> UoK</span>
           </span>
         </div>
 

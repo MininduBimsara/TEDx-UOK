@@ -51,7 +51,7 @@ export default function SpeakersListPage() {
                 letterSpacing: "0.1em",
               }}
             >
-              TEDXUOK 2025 SPEAKERS
+              TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> UoK 2025 SPEAKERS
             </span>
           </motion.div>
 
@@ -78,7 +78,7 @@ export default function SpeakersListPage() {
             style={{ fontWeight: 300 }}
           >
             Meet the visionaries, innovators, and thought leaders who will share
-            their groundbreaking ideas at TEDxUOK 2025
+            their groundbreaking ideas at TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> UoK 2025
           </motion.p>
         </motion.div>
 
@@ -202,7 +202,7 @@ export default function SpeakersListPage() {
               style={{ fontWeight: 300, fontSize: "16px", lineHeight: 1.7 }}
             >
               Get your tickets now to experience these inspiring speakers live
-              at TEDxUOK 2025
+              at TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> UoK 2025
             </p>
             <Link to="/#register">
               <motion.button

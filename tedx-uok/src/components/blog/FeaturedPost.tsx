@@ -41,7 +41,7 @@ export function FeaturedPost({ post }: FeaturedPostProps) {
           />
         ) : (
           <div className="w-full h-full bg-[#1a1a1a] flex items-center justify-center">
-            <span className="text-white/20 font-bold text-xl">TEDx UOK</span>
+            <span className="text-white/20 font-bold text-xl">TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> UoK</span>
           </div>
         )}
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500" />

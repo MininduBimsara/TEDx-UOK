@@ -3,7 +3,7 @@ import { seoConfig } from "../../config/seo";
 
 const TedX = () => (
   <span>
-    TED<sup className="relative -top-1">x</sup> UoK
+    TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> UoK
   </span>
 );
 

@@ -44,7 +44,7 @@ export function BlogCard({ post, index }: BlogCardProps) {
             />
            ) : (
              <div className="w-full h-full flex items-center justify-center bg-[#0E0E0E] text-white/20">
-               TEDx UOK
+               TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> UoK
              </div>
            )}
            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500" />

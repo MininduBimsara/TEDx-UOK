@@ -209,7 +209,7 @@ const TeamPage: React.FC = () => {
           <div>
             <h1 className={sharedStyles.typography.brandTitle}>
               <span className={sharedStyles.colors.tedxRed}>
-                TED<sup>x</sup>
+                TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup>
               </span>
               <span className="font-normal  text-white"> U<span className="lowercase">o</span>K</span>
             </h1>
@@ -224,7 +224,7 @@ const TeamPage: React.FC = () => {
           <div className={sharedStyles.layout.heroAside}>
             <p className={sharedStyles.typography.heroDescriptionDark}>
               Meet the licensee, executive committee, and directors who shape
-              TED<sup>x</sup> UoK.
+              TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> UoK.
             </p>
           </div>
         </div>

@@ -30,12 +30,12 @@ export default function AboutTedxUokPage() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6 md:mb-8 text-center md:text-left">Our Mission & Story</h2>
           <div className="bg-card border border-border rounded-lg p-8">
             <p className="text-xl text-muted-foreground mb-6">
-              TED<sup className="text-[0.8em]">x</sup> UoK was founded with a simple yet powerful vision: to create a platform
+              TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> UoK was founded with a simple yet powerful vision: to create a platform
               where innovative ideas from the University of Kelaniya community could be
               shared with the world.
             </p>
             <p className="text-lg text-muted-foreground">
-              As the first officially licensed TED<sup className="text-[0.8em]">x</sup> event at University of Kelaniya,
+              As the first officially licensed TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> event at University of Kelaniya,
               we're committed to fostering intellectual curiosity, interdisciplinary
               dialogue, and transformative thinking.
             </p>
@@ -44,7 +44,7 @@ export default function AboutTedxUokPage() {
 
         {/* Theme Intro */}
         <div className="mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6 md:mb-8 text-center md:text-left">TED<sup className="text-[0.8em]">x</sup> UoK {eventYear}: {currentTheme}</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6 md:mb-8 text-center md:text-left">TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> UoK {eventYear}: {currentTheme}</h2>
           <div className="bg-card border border-border rounded-lg p-8">
             <h3 className="text-2xl font-bold text-foreground mb-4">What is the Ripple Effect?</h3>
             <p className="text-muted-foreground mb-4">
@@ -106,7 +106,7 @@ export default function AboutTedxUokPage() {
             <div className="text-center p-6 border border-border rounded-lg bg-card">
               <div className="text-4xl font-bold text-primary mb-2">1st</div>
               <h4 className="text-lg font-bold text-foreground mb-2">Licensed Event</h4>
-              <p className="text-muted-foreground text-sm">First TEDx at University of Kelaniya</p>
+              <p className="text-muted-foreground text-sm">First TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> at University of Kelaniya</p>
             </div>
             <div className="text-center p-6 border border-border rounded-lg bg-card">
               <div className="text-4xl font-bold text-primary mb-2">100%</div>
@@ -143,7 +143,7 @@ export default function AboutTedxUokPage() {
                 to="/about/tedx"
                 className="border-2 border-primary text-foreground px-6 py-2 rounded-full hover:bg-primary hover:text-white transition-all duration-300"
               >
-                About TED<sup>x</sup>
+                About TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup>
               </Link>
             </div>
             <Link

@@ -437,7 +437,7 @@ const VolunteersPage: React.FC = () => {
               >
                 Volunteer Application for{" "}
                 <span style={{ color: "#EB0028" }}>
-                  TED<sup style={{ color: "#EB0028" }}>x</sup>
+                  TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup>
                 </span>{" "}
                 <span style={{ color: "#FFFFFF", fontWeight: "normal" }}>
                   UoK
@@ -510,8 +510,7 @@ const VolunteersPage: React.FC = () => {
                       className="text-gray-300 mb-4"
                       style={{ letterSpacing: "0" }}
                     >
-                      Thank you for your interest in volunteering with TED
-                      <sup>x</sup> UoK! Your application is being reviewed.
+                      Thank you for your interest in volunteering with TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> UoK! Your application is being reviewed.
                     </p>
 
                     <div className="bg-black/30 rounded-lg p-4 mb-4">

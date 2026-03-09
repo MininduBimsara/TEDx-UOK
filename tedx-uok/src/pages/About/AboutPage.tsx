@@ -51,7 +51,7 @@ export default function AboutPage() {
           <h1 className="text-6xl md:text-7xl font-bold mb-8">
             <span className="text-foreground">About</span>
             <span className="text-primary ml-4">
-              TED<sup>x</sup><span className="font-normal text-foreground">UoK</span>
+              TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup><span className="font-normal text-foreground">UoK</span>
             </span>
           </h1>
 
@@ -103,15 +103,14 @@ export default function AboutPage() {
           >
             <div className="mb-6">
               <span className="text-primary font-bold text-5xl">
-                TED<sup>x</sup>
+                TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup>
               </span>
             </div>
             <h2 className="text-2xl font-bold text-foreground mb-4">
-              About TED<sup>x</sup>
+              About TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup>
             </h2>
             <p className="text-muted-foreground mb-6">
-              Learn about the TED
-              <sup className="text-[0.6em] align-super">x</sup> program,
+              Learn about the TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> program,
               licensing, and how it differs from TED conferences.
             </p>
             <div className="flex items-center text-foreground font-medium group-hover:text-primary transition-colors">
@@ -126,14 +125,14 @@ export default function AboutPage() {
           >
             <div className="mb-6 flex items-start">
               <span className="text-primary font-bold text-5xl">
-                TED<sup>x</sup>
+                TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup>
               </span>
               <span className="text-foreground font-bold text-5xl ml-2">
                 UoK
               </span>
             </div>
             <h2 className="text-2xl font-bold text-foreground mb-4">
-              About TED<sup>x</sup><span className="font-normal text-foreground"> UoK</span>
+              About TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup><span className="font-normal text-foreground"> UoK</span>
             </h2>
             <p className="text-muted-foreground mb-6">
               Our story, mission, and commitment to spreading ideas at
@@ -192,7 +191,7 @@ export default function AboutPage() {
             <div className="flex items-center justify-between flex-wrap gap-4">
               <div>
                 <h3 className="text-2xl font-bold text-foreground mb-2">
-                  TED<sup className="text-[0.6em] align-super">x</sup>UoK 2026
+                  TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup>UoK 2026
                   Theme
                 </h3>
                 <p className="text-muted-foreground">
@@ -221,7 +220,7 @@ export default function AboutPage() {
               to="/events"
               className="px-8 py-3 bg-[#EB0028] !text-white rounded-full font-bold hover:bg-red-700 transition-colors duration-300"
             >
-              View TED<sup>x</sup> Events
+              View TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> Events
             </Link>
           </div>
         </div>

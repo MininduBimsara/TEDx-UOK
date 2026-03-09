@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "../ui/Button";
 import { Link } from "react-router-dom";
+import { formatTedxText } from "../../utils/textFormatting";
 
 interface props {
   date: string | null;
@@ -48,21 +49,19 @@ const Hero = ({ date, venue, theme, ctaLabel, ctaLink }: props) => {
             <div className="inline-flex items-center gap-2 mb-8 opacity-0 animate-fade-in-up">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
               <span className="text-sm font-medium uppercase text-muted-foreground tracking-widest">
-                Independently Organized TEDx Event
+                Independently Organized TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> Event
               </span>
             </div>
 
             {/* Main Title */}
             <h1 className="relative text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] mb-6 opacity-0 animate-fade-in-up animation-delay-100">
-              <span className="text-primary">TED</span>
-              <span className="text-primary absolute top-[-20%] ">x</span>
-              <span className="opacity-0">x</span>
-              <span className="text-foreground font-normal"> UoK</span>
+              <span className="text-[#EB0028]">TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup></span>
+              <span className="text-foreground font-normal ml-2">UoK</span>
             </h1>
 
             {/* Theme */}
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-light text-foreground mb-8 opacity-0 animate-fade-in-up animation-delay-200">
-              {eventTheme}
+              {formatTedxText(eventTheme)}
             </h2>
 
             {/* Event Details */}
@@ -113,8 +112,7 @@ const Hero = ({ date, venue, theme, ctaLabel, ctaLink }: props) => {
               {/* TEDx Text */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <span className="relative text-[12rem] xl:text-[14rem] font-bold select-none leading-none tracking-tighter">
-                  <span className="text-primary/20">TED</span>
-                  <span className="text-primary/10 absolute top-[-20%]">x</span>
+                  <span className="text-[#EB0028]/20">TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup></span>
                 </span>
               </div>
 

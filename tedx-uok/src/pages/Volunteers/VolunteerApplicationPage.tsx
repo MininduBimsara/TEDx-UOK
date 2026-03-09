@@ -174,12 +174,12 @@ export const VolunteerApplicationPage: React.FC = () => {
     {
       title: (
         <>
-          TED<sup>x</sup> Experience
+          TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> Experience
         </>
       ),
       description: (
         <>
-          Be part of a globally recognized event and the TED<sup>x</sup>{" "}
+          Be part of a globally recognized event and the TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup>{" "}
           community.
         </>
       ),
@@ -235,7 +235,7 @@ export const VolunteerApplicationPage: React.FC = () => {
       title: "Certificate",
       description: (
         <>
-          Receive an official TED<sup>x</sup> volunteer certificate upon
+          Receive an official TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> volunteer certificate upon
           completion.
         </>
       ),
@@ -281,7 +281,7 @@ export const VolunteerApplicationPage: React.FC = () => {
       title: "Resume Builder",
       description: (
         <>
-          Add prestigious TED<sup>x</sup> experience to your professional
+          Add prestigious TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> experience to your professional
           profile.
         </>
       ),
@@ -333,7 +333,7 @@ export const VolunteerApplicationPage: React.FC = () => {
               >
                 <span style={{ color: "#FFFFFF" }}>Volunteer with </span>
                 <span style={{ color: "#EB0028" }}>
-                  TED<sup style={{ color: "#EB0028" }}>x</sup>
+                  TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup>
                 </span>{" "}
                 <span style={{ fontWeight: "normal", color: "#FFFFFF" }}>UoK</span>
               </h1>
@@ -502,8 +502,7 @@ export const VolunteerApplicationPage: React.FC = () => {
                 className="text-gray-400 text-center mb-12 max-w-2xl mx-auto"
                 style={{ letterSpacing: "0" }}
               >
-                Beyond the experience, enjoy these exclusive benefits as a TED
-                <sup style={{ color: "#EB0028" }}>x</sup> UoK volunteer.
+                Beyond the experience, enjoy these exclusive benefits as a TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> UoK volunteer.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

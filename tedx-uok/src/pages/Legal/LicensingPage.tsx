@@ -18,7 +18,7 @@ export default function LicensingPage() {
           {/* Content */}
           <div className="space-y-8 text-white leading-relaxed text-center">
             <p className="text-lg">
-              TEDx UOK is an independently organized TEDx event operating under
+              TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> UoK is an independently organized TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> event operating under
               a license from TED Conferences LLC.
             </p>
 
@@ -27,8 +27,8 @@ export default function LicensingPage() {
                 About <span className="text-[#EB0028]">Our License</span>
               </h2>
               <p>
-                TEDx is a program of local, self-organized events that bring
-                people together to share a TED-like experience. At TED<sup>x</sup> UoK, our
+                TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> is a program of local, self-organized events that bring
+                people together to share a TED-like experience. At TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> UoK, our
                 event is organized by the University of Kelaniya community under
                 a license granted by TED.
               </p>
@@ -39,7 +39,7 @@ export default function LicensingPage() {
                 Independent <span className="text-[#EB0028]">Organization</span>
               </h2>
               <p>
-                While we operate under TED<sup>x</sup>'s brand and format guidelines, TED<sup>x</sup> UoK is independently organized and operated. TED Conferences LLC
+                While we operate under TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup>'s brand and format guidelines, TED<sup className="uppercase" style={{ fontSize: '0.7em', top: '-0.3em', position: 'relative' }}>x</sup> UoK is independently organized and operated. TED Conferences LLC
                 does not control or endorse the specific content of our event,
                 speakers, or presentations.
               </p>
