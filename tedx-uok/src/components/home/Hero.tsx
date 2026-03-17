@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "../ui/Button";
 import { Link } from "react-router-dom";
+import DensePulseMap from "./DensePulseMap";
 
 interface props {
   date: string | null;
@@ -107,27 +108,9 @@ const Hero = ({ date, venue, theme, ctaLabel, ctaLink }: props) => {
             </div>
           </div>
 
-          {/* Right Visual Element - TEDx */}
-          <div className="hidden lg:flex items-center justify-center relative opacity-0 animate-fade-in animation-delay-300">
-            <div className="relative w-full aspect-square max-w-lg">
-              {/* TEDx Text */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="relative text-[12rem] xl:text-[14rem] font-bold select-none leading-none tracking-tighter">
-                  <span className="text-primary/20">TED</span>
-                  <span className="text-primary/10 absolute top-[-20%]">x</span>
-                </span>
-              </div>
-
-              {/* Decorative Elements */}
-              <div className="absolute top-1/4 right-0 w-24 h-px bg-primary/30" />
-              <div className="absolute bottom-1/4 left-0 w-24 h-px bg-border" />
-              <div className="absolute top-0 left-1/4 w-px h-24 bg-border" />
-              <div className="absolute bottom-0 right-1/4 w-px h-24 bg-primary/30" />
-
-              {/* Corner Accents */}
-              <div className="absolute top-8 right-8 w-16 h-16 border border-border rounded-lg" />
-              <div className="absolute bottom-8 left-8 w-12 h-12 border border-primary/30 rounded-lg" />
-            </div>
+          {/* Right Visual Element - Dense Pulse Map */}
+          <div className="hidden lg:flex items-center justify-center relative opacity-0 animate-fade-in animation-delay-300 w-full lg:w-[110%] xl:w-[120%] h-full min-h-[400px] z-20 lg:-translate-x-12 pr-8">
+            <DensePulseMap />
           </div>
         </div>
       </div>
