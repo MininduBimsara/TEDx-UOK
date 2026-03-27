@@ -6,12 +6,18 @@ import { formatTedxText } from "../../utils/textFormatting";
 interface props {
   date: string | null;
   venue: string | null;
-  theme: string | null;
   ctaLabel?: string;
   ctaLink?: string;
 }
 
-const Hero = ({ date, venue, theme, ctaLabel, ctaLink }: props) => {
+const heroContent = {
+  title: "TEDx UoK",
+  subtitle: "Ideas Worth Spreading",
+  description:
+    "An independently organised TEDx event at University of Kelaniya, bringing together curious minds to explore ideas that inspire dialogue, understanding, and meaningful change.",
+};
+
+const Hero = ({ date, venue, ctaLabel, ctaLink }: props) => {
   const eventDate = date
     ? new Date(date).toLocaleDateString("en-US", {
       year: "numeric",
@@ -20,8 +26,8 @@ const Hero = ({ date, venue, theme, ctaLabel, ctaLink }: props) => {
     })
     : "Date To Be Announced";
 
-  const eventVenue = venue || "Venue To Be Annouced";
-  const eventTheme = theme || "Theme To Be Annouced";
+  const eventVenue = venue || "Venue To Be Announced";
+
   const primaryLabel = ctaLabel || "Register Now";
   const primaryLink = ctaLink || "/register";
 
@@ -38,14 +44,14 @@ const Hero = ({ date, venue, theme, ctaLabel, ctaLink }: props) => {
         />
       </div>
 
-      {/* Subtle Red Accent Line */}
+      {/* Red Accent Line */}
       <div className="absolute left-0 top-1/4 w-1 h-32 bg-primary" />
 
       <div className="container mx-auto px-6 pt-24 pb-16 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
+          {/* LEFT SIDE */}
           <div>
-            {/* Event Badge */}
+            {/* Badge */}
             <div className="inline-flex items-center gap-2 mb-8 opacity-0 animate-fade-in-up">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
               <span className="text-sm font-medium uppercase text-muted-foreground tracking-widest">
@@ -53,18 +59,23 @@ const Hero = ({ date, venue, theme, ctaLabel, ctaLink }: props) => {
               </span>
             </div>
 
-            {/* Main Title */}
-            <h1 className="relative text-5xl md:text-7xl lg:text-8xl font-extrabold leading-[0.95] mb-6 opacity-0 animate-fade-in-up animation-delay-100">
-              {formatTedxText("TEDx UoK", true)}
+            {/* Title */}
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-[0.95] mb-6 opacity-0 animate-fade-in-up animation-delay-100">
+              {formatTedxText(heroContent.title, true)}
             </h1>
 
-            {/* Theme */}
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-light text-foreground mb-8 opacity-0 animate-fade-in-up animation-delay-200">
-              {formatTedxText(eventTheme, true)}
+            {/* Theme / Subtitle */}
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-light text-foreground mb-6 opacity-0 animate-fade-in-up animation-delay-200">
+              {formatTedxText(heroContent.subtitle, true)}
             </h2>
 
-            {/* Event Details */}
-            <div className="flex flex-col sm:flex-row gap-6 mb-12 opacity-0 animate-fade-in-up animation-delay-300">
+            {/* Description */}
+            <p className="text-base md:text-lg text-muted-foreground max-w-xl mb-10 opacity-0 animate-fade-in-up animation-delay-300">
+              {heroContent.description}
+            </p>
+
+            {/* Event Info */}
+            <div className="flex flex-col sm:flex-row gap-6 mb-12 opacity-0 animate-fade-in-up animation-delay-400">
               <div className="flex items-center gap-3">
                 <div className="w-px h-8 bg-primary" />
                 <div>
@@ -76,6 +87,7 @@ const Hero = ({ date, venue, theme, ctaLabel, ctaLink }: props) => {
                   </p>
                 </div>
               </div>
+
               <div className="flex items-center gap-3">
                 <div className="w-px h-8 bg-border" />
                 <div>
@@ -89,14 +101,15 @@ const Hero = ({ date, venue, theme, ctaLabel, ctaLink }: props) => {
               </div>
             </div>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-in-up animation-delay-400">
+            {/* CTA */}
+            <div className="flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-in-up animation-delay-500">
               <Link to={primaryLink}>
                 <Button variant="tedxPrimary" size="xl">
                   {primaryLabel}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
+
               <Link to="/about">
                 <Button variant="tedxSecondary" size="xl">
                   Learn More
@@ -105,23 +118,22 @@ const Hero = ({ date, venue, theme, ctaLabel, ctaLink }: props) => {
             </div>
           </div>
 
-          {/* Right Visual Element - TEDx */}
+          {/* RIGHT SIDE VISUAL */}
           <div className="hidden lg:flex items-center justify-center relative opacity-0 animate-fade-in animation-delay-300">
             <div className="relative w-full aspect-square max-w-lg">
-              {/* TEDx Text */}
+              {/* TEDx Background Text */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="relative text-[12rem] xl:text-[14rem] font-bold select-none leading-none tracking-tighter">
-                  <span className="opacity-20">{formatTedxText("TEDx", true)}</span>
+                <span className="text-[12rem] xl:text-[14rem] font-bold select-none leading-none tracking-tighter opacity-10">
+                  {formatTedxText("TEDx", true)}
                 </span>
               </div>
 
-              {/* Decorative Elements */}
+              {/* Decorations */}
               <div className="absolute top-1/4 right-0 w-24 h-px bg-primary/30" />
               <div className="absolute bottom-1/4 left-0 w-24 h-px bg-border" />
               <div className="absolute top-0 left-1/4 w-px h-24 bg-border" />
               <div className="absolute bottom-0 right-1/4 w-px h-24 bg-primary/30" />
 
-              {/* Corner Accents */}
               <div className="absolute top-8 right-8 w-16 h-16 border border-border rounded-lg" />
               <div className="absolute bottom-8 left-8 w-12 h-12 border border-primary/30 rounded-lg" />
             </div>

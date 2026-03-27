@@ -2,6 +2,15 @@ import { formatTedxText } from '../../utils/textFormatting';
 import { Link } from 'react-router-dom';
 import { Check, ChevronLeft, ExternalLink, X } from 'lucide-react';
 
+const aboutTedxContent = {
+  title: "About TEDx",
+  paragraphs: [
+    "In the spirit of Ideas Worth Spreading, TED has created a programme called TEDx. TEDx is a programme of local, independently organised events that bring people together to share a TED-like experience.",
+    "At a TEDx event, TED Talks videos and live speakers come together to spark deep discussion and connection within a local community. These events are organised independently under a free licence from TED.",
+    "While each TEDx event is shaped by its local context, all TEDx events operate within TED’s guidelines to ensure a consistent experience focused on ideas, curiosity, and thoughtful dialogue.",
+  ],
+};
+
 export default function AboutTedxPage() {
   return (
     <div className="min-h-screen bg-background text-foreground pt-20">
@@ -19,11 +28,16 @@ export default function AboutTedxPage() {
 
         {/* Definition Section */}
         <div className="mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6 md:mb-8 text-center md:text-left">What is {formatTedxText("TEDx")} ?</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6 md:mb-8 text-center md:text-left">{formatTedxText(aboutTedxContent.title)}</h2>
           <div className="bg-card border border-border rounded-lg p-6 md:p-8">
-            <p className="text-xl text-muted-foreground">
-              {formatTedxText("TEDx events are independently organized under a free license granted by TED. These events bring the spirit of TED to local communities around the globe.")}
-            </p>
+            {aboutTedxContent.paragraphs.map((para, index) => (
+              <p
+                key={index}
+                className={index === 0 ? "text-xl text-muted-foreground mb-6" : "text-lg text-muted-foreground mb-6"}
+              >
+                {formatTedxText(para)}
+              </p>
+            ))}
           </div>
         </div>
 

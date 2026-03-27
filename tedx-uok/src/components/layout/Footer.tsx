@@ -59,6 +59,9 @@ const socials = [
   { icon: Twitter, href: "https://x.com", label: "X (Twitter)" },
 ];
 
+const footerNote =
+  "This independent TEDx event is operated under licence from TED.";
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -173,9 +176,7 @@ export default function Footer() {
             .
           </p>
           <p className="text-sm text-white/50">
-            This independent{" "}
-            <span className="font-bold">{formatTedxText("TEDx", true)}</span>{" "}
-            event is operated under license from TED.
+            {formatTedxText(footerNote, true)}
           </p>
         </div>
       </div>

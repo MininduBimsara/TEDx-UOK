@@ -6,6 +6,15 @@ export default function AboutTedxUokPage() {
   const currentTheme = "The Ripple Effect";
   const eventYear = "2024";
 
+  const aboutTedxUokContent = {
+    title: "About TEDx UoK - Our Mission and Story",
+    paragraphs: [
+      "TEDx UoK is an independently organised TEDx event based at the University of Kelaniya, created with the aim of assembling thinkers, innovators, and storytellers who are shaping ideas that matter.",
+      "Rooted in a university known for academic excellence and cultural diversity, TEDx UoK serves as a platform for meaningful conversations that challenge assumptions, explore new perspectives, and spark meaningful dialogue. The event celebrates ideas that emerge from curiosity, courage, and the willingness to move beyond the familiar.",
+      "TEDx UoK is organised by a passionate team of students and volunteers which reflects a commitment to intellectual openness and interdisciplinary thinking. It provides a space where voices from varied backgrounds such as academic, industry, arts, scientific, and community backgrounds can share insights that reverberate both locally and globally.",
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-background text-foreground pt-20">
       {/* Hero Section */}
@@ -28,18 +37,16 @@ export default function AboutTedxUokPage() {
 
         {/* Mission & Story */}
         <div className="mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-6 md:mb-8 text-center md:text-left">Our Mission & Story</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-6 md:mb-8 text-center md:text-left">{aboutTedxUokContent.title}</h2>
           <div className="bg-card border border-border rounded-lg p-8">
-            <p className="text-xl text-muted-foreground mb-6">
-              {formatTedxText("TEDx UoK")} was founded with a simple yet powerful vision: to create a platform
-              where innovative ideas from the University of Kelaniya community could be
-              shared with the world.
-            </p>
-            <p className="text-lg text-muted-foreground">
-              As the first officially licensed {formatTedxText("TEDx")} event at University of Kelaniya,
-              we're committed to fostering intellectual curiosity, interdisciplinary
-              dialogue, and transformative thinking.
-            </p>
+            {aboutTedxUokContent.paragraphs.map((para, index) => (
+              <p
+                key={index}
+                className={index === 0 ? "text-xl text-muted-foreground mb-6" : "text-lg text-muted-foreground mb-6"}
+              >
+                {formatTedxText(para, true)}
+              </p>
+            ))}
           </div>
         </div>
 
