@@ -1,12 +1,13 @@
 import Loading from "../../components/ui/Loading";
-import { supabase } from "../../lib/supabase";
+// import { supabase } from "../../lib/supabase";
 import { useEvents } from "../../hooks/useEvents";
-import { useSpeakers } from "../../hooks/useSpeakers";
+// import { useSpeakers } from "../../hooks/useSpeakers";
 import { formatTedxText } from "../../utils/textFormatting";
 import SEO from "../../components/common/SEO";
 
-const SPEAKER_BUCKET = import.meta.env.VITE_SUPABASE_BUCKET_SPEAKER_PHOTOS;
+// const SPEAKER_BUCKET = import.meta.env.VITE_SUPABASE_BUCKET_SPEAKER_PHOTOS;
 
+/*
 const getImageUrl = (path: string | null, bucketName: string) => {
   if (!path)
     return "https://ui-avatars.com/api/?name=TEDx&background=EB0028&color=fff&size=400";
@@ -14,6 +15,7 @@ const getImageUrl = (path: string | null, bucketName: string) => {
   const { data } = supabase.storage.from(bucketName).getPublicUrl(path);
   return data.publicUrl;
 };
+*/
 
 const subPillars = [
   {
@@ -35,12 +37,13 @@ const subPillars = [
 
 const Theme = () => {
   const { event, loading: eventLoading } = useEvents();
-  const { speakers, loading: speakersLoading } = useSpeakers();
+  // const { speakers, loading: speakersLoading } = useSpeakers();
 
-  if (eventLoading || speakersLoading) {
+  if (eventLoading /* || speakersLoading */) {
     return <Loading />;
   }
 
+  /*
   const realSpeakers = speakers.map((s) => ({
     id: s.speaker_id,
     name: s.full_name,
@@ -48,15 +51,16 @@ const Theme = () => {
     alignment: s.bio_short || s.title,
     image: getImageUrl(s.photo_url, SPEAKER_BUCKET),
   }));
+  */
 
   const themeName = event?.theme || "UNCHARTED";
 
   return (
     <main className="min-h-screen bg-background relative top-[-50px]">
-      <SEO 
-        title="TEDxUOK 2026 Theme | Ideas That Shape the Future" 
-        description="Explore the inspiring theme of TEDxUOK 2026. Dive into the ideas, questions, and perspectives that define this year's event at the University of Kelaniya." 
-        url="https://tedxuok.org/theme" 
+      <SEO
+        title="TEDxUOK 2026 Theme | Ideas That Shape the Future"
+        description="Explore the inspiring theme of TEDxUOK 2026. Dive into the ideas, questions, and perspectives that define this year's event at the University of Kelaniya."
+        url="https://tedxuok.org/theme"
       />
       {/* Hero Section - Theme Title */}
       <section className="pt-24 pb-16 md:pt-32 md:pb-24 px-6">
@@ -67,11 +71,15 @@ const Theme = () => {
           <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold leading-[0.95] mb-8 opacity-0 animate-fade-in-up animation-delay-100">
             <span className="text-foreground">{themeName}</span>
             <br />
-            <span className="text-primary text-3xl sm:text-4xl md:text-5xl mt-4 block">{formatTedxText("Ideas Worth Spreading")}</span>
+            <span className="text-primary text-3xl sm:text-4xl md:text-5xl mt-4 block">
+              {formatTedxText("Ideas Worth Spreading")}
+            </span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl opacity-0 animate-fade-in-up animation-delay-200">
-            {formatTedxText(event?.description ||
-              "Exploring the edges of possibility and the courage to venture beyond.")}
+            {formatTedxText(
+              event?.description ||
+                "Exploring the edges of possibility and the courage to venture beyond.",
+            )}
           </p>
         </div>
       </section>
@@ -84,7 +92,9 @@ const Theme = () => {
           </h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              TEDxUoK is a stage where curiosity meets action. We bring together diverse voices from across our community to challenge limits, spark change, and share the ideas that will define our future.
+              TEDxUoK is a stage where curiosity meets action. We bring together
+              diverse voices from across our community to challenge limits,
+              spark change, and share the ideas that will define our future.
             </p>
           </div>
         </div>
@@ -102,7 +112,10 @@ const Theme = () => {
                 The Urgency of Now
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                We are at a turning point. With so much change in technology and the world, we need the courage to think differently. The limits we once accepted are shifting, and staying still is no longer an option.
+                We are at a turning point. With so much change in technology and
+                the world, we need the courage to think differently. The limits
+                we once accepted are shifting, and staying still is no longer an
+                option.
               </p>
             </div>
             <div>
@@ -110,7 +123,9 @@ const Theme = () => {
                 The Opportunity Ahead
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Every time we break a boundary, we see a new horizon. When we challenge the old way of doing things, we don’t just solve problems. We discover new ideas that will shape our future.
+                Every time we break a boundary, we see a new horizon. When we
+                challenge the old way of doing things, we don’t just solve
+                problems. We discover new ideas that will shape our future.
               </p>
             </div>
           </div>
@@ -129,7 +144,9 @@ const Theme = () => {
                 For Students
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                The world is changing fast. We encourage students to look beyond traditional paths and develop the mindset needed for a world that is still evolving.
+                The world is changing fast. We encourage students to look beyond
+                traditional paths and develop the mindset needed for a world
+                that is still evolving.
               </p>
             </div>
             <div className="border-l-2 border-primary pl-8">
@@ -137,7 +154,9 @@ const Theme = () => {
                 For Our Community
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Our community is made of diverse backgrounds and perspectives. It is here that we find the strength to move past boundaries and create a stronger future together.
+                Our community is made of diverse backgrounds and perspectives.
+                It is here that we find the strength to move past boundaries and
+                create a stronger future together.
               </p>
             </div>
             <div className="border-l-2 border-primary pl-8">
@@ -145,7 +164,9 @@ const Theme = () => {
                 For The World
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Modern global issues can’t be solved with old solutions. We believe that learning to rethink traditional boundaries is an essential skill for everyone today.
+                Modern global issues can’t be solved with old solutions. We
+                believe that learning to rethink traditional boundaries is an
+                essential skill for everyone today.
               </p>
             </div>
           </div>
@@ -179,14 +200,16 @@ const Theme = () => {
         </div>
       </section>
 
-      {/* How Speakers Align */}
+      {/* Speakers section commented out */}
+      {/*
       <section className="py-16 md:py-24 px-6 border-t border-border">
         <div className="container mx-auto">
           <h2 className="text-sm font-medium text-primary tracking-widest uppercase mb-4">
             Speaker Alignment
           </h2>
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl">
-            See how our speakers interpret the theme "{formatTedxText(themeName)}".
+            See how our speakers interpret the theme "
+            {formatTedxText(themeName)}".
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {realSpeakers.map((speaker) => (
@@ -202,10 +225,11 @@ const Theme = () => {
                   />
                 </div>
                 <div className="p-5">
-                  <h3 className="font-bold text-foreground">{speaker.name}</h3>
+                  <h3 className="font-bold text-foreground">
+                    {speaker.name}
+                  </h3>
                   <p className="text-sm text-primary mb-2">{speaker.topic}</p>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    {/* Using Bio as fallback for Alignment text */}
                     {formatTedxText(speaker.alignment)}
                   </p>
                 </div>
@@ -214,6 +238,7 @@ const Theme = () => {
           </div>
         </div>
       </section>
+      */}
     </main>
   );
 };

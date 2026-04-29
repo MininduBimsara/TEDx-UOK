@@ -127,11 +127,11 @@ export default function Navbar() {
           </nav>
 
           {/* Right: Actions */}
-          <div className="hidden lg:flex items-center">
+          {/* <div className="hidden lg:flex items-center">
             <Button variant="tedxPrimary" size="sm" asChild>
               <NavLink to="/">Register Now</NavLink>
             </Button>
-          </div>
+          </div> */}
 
           {/* Mobile hamburger */}
           <div className="lg:hidden flex items-center">

@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
-import type { BlogPost } from '../../types/models';
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import type { BlogPost } from "../../types/models";
 
 interface BlogCardProps {
   post: BlogPost;
@@ -11,18 +11,18 @@ interface BlogCardProps {
 export function BlogCard({ post, index }: BlogCardProps) {
   // Extract excerpt from content (first <p> tag or first 150 chars)
   const getExcerpt = (htmlContent: string) => {
-    const tempDiv = document.createElement('div');
+    const tempDiv = document.createElement("div");
     tempDiv.innerHTML = htmlContent;
-    const text = tempDiv.textContent || tempDiv.innerText || '';
-    return text.slice(0, 150) + '...';
+    const text = tempDiv.textContent || tempDiv.innerText || "";
+    return text.slice(0, 150) + "...";
   };
 
   const formatDate = (dateString?: string) => {
-    if (!dateString) return '';
-    return new Date(dateString).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
+    if (!dateString) return "";
+    return new Date(dateString).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
     });
   };
 
@@ -34,20 +34,23 @@ export function BlogCard({ post, index }: BlogCardProps) {
       transition={{ delay: index * 0.1 }}
       className="group relative flex flex-col h-full"
     >
-      <Link to={`/blog/${post.slug}`} className="block overflow-hidden rounded-2xl mb-6">
+      <Link
+        to={`/blog/${post.slug}`}
+        className="block overflow-hidden rounded-2xl mb-6"
+      >
         <div className="aspect-[16/9] overflow-hidden bg-[#0E0E0E] border-b border-[#1F1F1F] relative">
-           {post.cover_image_url ? (
-            <img 
-              src={post.cover_image_url} 
+          {post.cover_image_url ? (
+            <img
+              src={post.cover_image_url}
               alt={post.title}
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
-           ) : (
-             <div className="w-full h-full flex items-center justify-center bg-[#0E0E0E] text-white/20">
-               TEDx UOK
-             </div>
-           )}
-           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500" />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center bg-[#0E0E0E] text-white/20">
+              TEDxUoK
+            </div>
+          )}
+          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500" />
         </div>
       </Link>
 
@@ -58,7 +61,10 @@ export function BlogCard({ post, index }: BlogCardProps) {
           <span>{formatDate(post.published_at)}</span>
         </div>
 
-        <Link to={`/blog/${post.slug}`} className="group-hover:text-[#EB0028] transition-colors duration-300">
+        <Link
+          to={`/blog/${post.slug}`}
+          className="group-hover:text-[#EB0028] transition-colors duration-300"
+        >
           <h2 className="text-2xl font-bold text-white mb-4 leading-tight">
             {post.title}
           </h2>
@@ -69,7 +75,7 @@ export function BlogCard({ post, index }: BlogCardProps) {
         </p>
 
         <div className="mt-auto">
-          <Link 
+          <Link
             to={`/blog/${post.slug}`}
             className="inline-flex items-center gap-2 text-sm font-medium text-white group-hover:text-[#EB0028] transition-colors"
           >

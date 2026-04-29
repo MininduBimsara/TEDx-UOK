@@ -19,11 +19,11 @@ const subPillars = [
 ];
 
 const themePreview = {
-  sectionTitle: "TEDx UoK 2026 Theme",
+  sectionTitle: "TEDxUoK 2026 Theme",
   title: "UNCHARTED",
   subtitle: "Ideas worth spreading",
   description:
-    "Progress begins at the edge of the known. UNCHARTED explores ideas born in uncertainty, where curiosity challenges convention, boundaries are questioned, and new perspectives emerge. At TEDx UoK 2026, the theme invites thinkers, creators, and storytellers to venture beyond the familiar and reimagine what is possible.",
+    "Progress begins at the edge of the known. UNCHARTED explores ideas born in uncertainty, where curiosity challenges convention, boundaries are questioned, and new perspectives emerge. At TEDxUoK 2026, the theme invites thinkers, creators, and storytellers to venture beyond the familiar and reimagine what is possible.",
   ctaLabel: "Explore the Theme",
   ctaLink: "/theme",
 };

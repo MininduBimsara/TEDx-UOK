@@ -30,7 +30,7 @@ insert into public.events (
   is_active
 ) values (
   '22222222-2222-2222-2222-222222222222',
-  'TEDx UoK 2026',
+  'TEDxUoK 2026',
   '2026-08-15 09:00:00+05:30',
   'UNCHARTED',
   'An independently organised TEDx event at University of Kelaniya, bringing together curious minds to explore ideas that inspire dialogue, understanding, and meaningful change.',
@@ -65,7 +65,7 @@ insert into public.blog_posts (
   'UNCHARTED',
   'uncharted',
   'Progress begins at the edge of the known. UNCHARTED explores ideas born in uncertainty, where curiosity challenges convention, boundaries are questioned, and new perspectives emerge.',
-  'TEDx UoK Team',
+  'TEDxUoK Team',
   true,
   now()
 );

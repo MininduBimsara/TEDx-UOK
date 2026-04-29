@@ -7,26 +7,26 @@ import AboutPage from "../pages/About/AboutPage";
 import AboutTedPage from "../pages/About/AboutTedPage";
 import AboutTedxPage from "../pages/About/AboutTedxPage";
 import AboutTedxUokPage from "../pages/About/AboutTedxUokPage";
-import TeamPage from "../pages/Team/TeamPage";
+// import TeamPage from "../pages/Team/TeamPage";
 // import PartnersPage from "../pages/Partners/PartnersPage";
 import ContactPage from "../pages/Contact/ContactPage";
-import RegistrationPage from "../pages/Registration/RegistrationPage";
+// import RegistrationPage from "../pages/Registration/RegistrationPage";
 import ThemePage from "../pages/Theme/Theme";
-import ImpactPage from "../pages/Impact/ImpactPage";
-import MediaPage from "../pages/PressAndMedia/PressAndMediaPage";
-import PastEventsPage from "../pages/PastEvents/PastEventsPage";
-import VolunteerPage from "../pages/Volunteers/VolunteersPage"; // Form
-import VolunteerApplicationPage from "../pages/Volunteers/VolunteerApplicationPage"; // Info/Landing
-import VenuePage from "../pages/Venue/VenuePage";
+// import ImpactPage from "../pages/Impact/ImpactPage";
+// import MediaPage from "../pages/PressAndMedia/PressAndMediaPage";
+// import PastEventsPage from "../pages/PastEvents/PastEventsPage";
+// import VolunteerPage from "../pages/Volunteers/VolunteersPage"; // Form
+// import VolunteerApplicationPage from "../pages/Volunteers/VolunteerApplicationPage"; // Info/Landing
+// import VenuePage from "../pages/Venue/VenuePage";
 import FAQPage from "../pages/FAQ/FAQPage";
 import PrivacyPolicyPage from "../pages/Legal/PrivacyPolicyPage";
 import AccessibilityPage from "../pages/Legal/AccessibilityPage";
 import CodeOfConductPage from "../pages/Legal/CodeOfConductPage";
 import LicensingPage from "../pages/Legal/LicensingPage";
-import PaymentSuccessPage from "../pages/Payment/PaymentSuccessPage";
-import PaymentFailPage from "../pages/Payment/PaymentFailPage";
-import PaymentCancelPage from "../pages/Payment/PaymentCancelPage";
-import CommunityRegistrationPage from "../pages/Community/CommunityPage";
+// import PaymentSuccessPage from "../pages/Payment/PaymentSuccessPage";
+// import PaymentFailPage from "../pages/Payment/PaymentFailPage";
+// import PaymentCancelPage from "../pages/Payment/PaymentCancelPage";
+// import CommunityRegistrationPage from "../pages/Community/CommunityPage";
 import NotFoundPage from "../pages/NotFound/NotFoundPage";
 import ComingSoon from "../pages/ComingSoon/ComingSoon";
 import AdminLoginPage from "../pages/Admin/AdminLoginPage";
@@ -150,7 +150,8 @@ function AnimatedRoutes() {
           path="/team"
           element={
             <div key={location.pathname} className="page-transition">
-              <TeamPage />
+              <ComingSoon />
+              {/* <TeamPage /> */}
             </div>
           }
         />
@@ -175,7 +176,8 @@ function AnimatedRoutes() {
           path="/register"
           element={
             <div key={location.pathname} className="page-transition">
-              <RegistrationPage />
+              <ComingSoon />
+              {/* <RegistrationPage /> */}
             </div>
           }
         />
@@ -211,7 +213,8 @@ function AnimatedRoutes() {
           path="/impact"
           element={
             <div key={location.pathname} className="page-transition">
-              <ImpactPage />
+              <ComingSoon />
+              {/* <ImpactPage /> */}
             </div>
           }
         />
@@ -219,7 +222,8 @@ function AnimatedRoutes() {
           path="/media"
           element={
             <div key={location.pathname} className="page-transition">
-              <MediaPage />
+              <ComingSoon />
+              {/* <MediaPage /> */}
             </div>
           }
         />
@@ -227,7 +231,8 @@ function AnimatedRoutes() {
           path="/past-events"
           element={
             <div key={location.pathname} className="page-transition">
-              <PastEventsPage />
+              <ComingSoon />
+              {/* <PastEventsPage /> */}
             </div>
           }
         />
@@ -237,7 +242,8 @@ function AnimatedRoutes() {
           path="/volunteer"
           element={
             <div key={location.pathname} className="page-transition">
-              <VolunteerApplicationPage />
+              <ComingSoon />
+              {/* <VolunteerApplicationPage /> */}
             </div>
           }
         />
@@ -245,7 +251,8 @@ function AnimatedRoutes() {
           path="/volunteer/register"
           element={
             <div key={location.pathname} className="page-transition">
-              <VolunteerPage />
+              <ComingSoon />
+              {/* <VolunteerPage /> */}
             </div>
           }
         />
@@ -254,7 +261,8 @@ function AnimatedRoutes() {
           path="/venue"
           element={
             <div key={location.pathname} className="page-transition">
-              <VenuePage />
+              <ComingSoon />
+              {/* <VenuePage /> */}
             </div>
           }
         />
@@ -306,7 +314,8 @@ function AnimatedRoutes() {
           path="/payment/success"
           element={
             <div key={location.pathname} className="page-transition">
-              <PaymentSuccessPage />
+              <ComingSoon />
+              {/* <PaymentSuccessPage /> */}
             </div>
           }
         />
@@ -314,7 +323,8 @@ function AnimatedRoutes() {
           path="/payment/fail"
           element={
             <div key={location.pathname} className="page-transition">
-              <PaymentFailPage />
+              <ComingSoon />
+              {/* <PaymentFailPage /> */}
             </div>
           }
         />
@@ -322,7 +332,8 @@ function AnimatedRoutes() {
           path="/payment/cancel"
           element={
             <div key={location.pathname} className="page-transition">
-              <PaymentCancelPage />
+              <ComingSoon />
+              {/* <PaymentCancelPage /> */}
             </div>
           }
         />
@@ -331,7 +342,8 @@ function AnimatedRoutes() {
           path="/community/register"
           element={
             <div key={location.pathname} className="page-transition">
-              <CommunityRegistrationPage />
+              <ComingSoon />
+              {/* <CommunityRegistrationPage /> */}
             </div>
           }
         />

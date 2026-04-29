@@ -81,7 +81,7 @@ const HomePage = () => {
         structuredData={{
           "@context": "https://schema.org",
           "@type": "Event",
-          name: "TEDx UoK",
+          name: "TEDxUoK",
           description:
             "An independently organised TED event at the University of Kelaniya, Sri Lanka.",
           url: "https://tedxuok.org/",
@@ -92,7 +92,7 @@ const HomePage = () => {
           eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
           organizer: {
             "@type": "Organization",
-            name: "TEDx UoK",
+            name: "TEDxUoK",
             url: "https://tedxuok.org/",
           },
           location: {

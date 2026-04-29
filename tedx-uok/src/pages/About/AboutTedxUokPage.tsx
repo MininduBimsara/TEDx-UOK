@@ -1,30 +1,30 @@
-import { formatTedxText } from '../../utils/textFormatting';
-import { Link } from 'react-router-dom';
-import { ArrowRight, ChevronLeft } from 'lucide-react';
+import { formatTedxText } from "../../utils/textFormatting";
+import { Link } from "react-router-dom";
+import { ArrowRight, ChevronLeft } from "lucide-react";
 import SEO from "../../components/common/SEO";
 
 const aboutTedxUokContent = {
-  title: "About TEDx UoK - Our Mission and Story",
+  title: "About TEDxUoK - Our Mission and Story",
   paragraphs: [
-    "TEDx UoK is an independently organised TEDx event based at the University of Kelaniya, created with the aim of assembling thinkers, innovators, and storytellers who are shaping ideas that matter.",
-    "Rooted in a university known for academic excellence and cultural diversity, TEDx UoK serves as a platform for meaningful conversations that challenge assumptions, explore new perspectives, and spark meaningful dialogue. The event celebrates ideas that emerge from curiosity, courage, and the willingness to move beyond the familiar.",
-    "TEDx UoK is organised by a passionate team of students and volunteers which reflects a commitment to intellectual openness and interdisciplinary thinking. It provides a space where voices from varied backgrounds such as academic, industry, arts, scientific, and community backgrounds can share insights that reverberate both locally and globally.",
+    "TEDxUoK is an independently organised TEDx event based at the University of Kelaniya, created with the aim of assembling thinkers, innovators, and storytellers who are shaping ideas that matter.",
+    "Rooted in a university known for academic excellence and cultural diversity, TEDxUoK serves as a platform for meaningful conversations that challenge assumptions, explore new perspectives, and spark meaningful dialogue. The event celebrates ideas that emerge from curiosity, courage, and the willingness to move beyond the familiar.",
+    "TEDxUoK is organised by a passionate team of students and volunteers which reflects a commitment to intellectual openness and interdisciplinary thinking. It provides a space where voices from varied backgrounds such as academic, industry, arts, scientific, and community backgrounds can share insights that reverberate both locally and globally.",
   ],
 };
 
 export default function AboutTedxUokPage() {
   return (
     <div className="min-h-screen bg-background text-foreground pt-20">
-      <SEO 
-        title="About TEDxUOK | Our Story, Mission & Vision" 
-        description="TEDxUOK is the flagship independently licensed TED event at the University of Kelaniya. Uncover our story, mission, and the vision driving ideas in Sri Lanka." 
-        url="https://tedxuok.org/about/tedx-uok" 
+      <SEO
+        title="About TEDxUoK | Our Story, Mission & Vision"
+        description="TEDxUoK is the flagship independently licensed TED event at the University of Kelaniya. Uncover our story, mission, and the vision driving ideas in Sri Lanka."
+        url="https://tedxuok.org/about/tedx-uok"
       />
       {/* Hero Section */}
       <section className="py-16 px-6 max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 md:mb-8">
-            {formatTedxText("TEDx UoK", true)}
+            {formatTedxText("TEDxUoK", true)}
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto px-2">
             Spreading ideas worth sharing at the University of Kelaniya.
@@ -38,7 +38,10 @@ export default function AboutTedxUokPage() {
           </h2>
           <div className="bg-card border border-border rounded-lg p-8 space-y-6">
             {aboutTedxUokContent.paragraphs.map((paragraph, index) => (
-              <p key={index} className="text-lg text-muted-foreground leading-relaxed">
+              <p
+                key={index}
+                className="text-lg text-muted-foreground leading-relaxed"
+              >
                 {formatTedxText(paragraph)}
               </p>
             ))}
@@ -48,53 +51,77 @@ export default function AboutTedxUokPage() {
         {/* Theme Intro */}
         <div className="mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-6 md:mb-8 text-center md:text-left">
-            {formatTedxText("TEDx UoK 2026 Theme: UNCHARTED", true)}
+            {formatTedxText("TEDxUoK 2026 Theme: UNCHARTED", true)}
           </h2>
           <div className="bg-card border border-border rounded-lg p-8">
-            <h3 className="text-2xl font-bold text-foreground mb-4">What is UNCHARTED?</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4">
+              What is UNCHARTED?
+            </h3>
             <p className="text-muted-foreground mb-4 leading-relaxed">
-              Progress begins at the edge of the known. UNCHARTED explores ideas born in uncertainty, where curiosity challenges convention, boundaries are questioned, and new perspectives emerge.
+              Progress begins at the edge of the known. UNCHARTED explores ideas
+              born in uncertainty, where curiosity challenges convention,
+              boundaries are questioned, and new perspectives emerge.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              At TEDx UoK 2026, the theme invites thinkers, creators, and storytellers to venture beyond the familiar and reimagine what is possible.
+              At TEDxUoK 2026, the theme invites thinkers, creators, and
+              storytellers to venture beyond the familiar and reimagine what is
+              possible.
             </p>
           </div>
         </div>
 
         {/* Event Goals */}
         <div className="mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-6 md:mb-8 text-center md:text-left">Event Goals & Impact</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-6 md:mb-8 text-center md:text-left">
+            Event Goals & Impact
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-card border border-border rounded-lg p-6">
-              <h3 className="text-2xl font-bold text-primary mb-4">Short-term Goals</h3>
+              <h3 className="text-2xl font-bold text-primary mb-4">
+                Short-term Goals
+              </h3>
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
-                  <span className="text-muted-foreground">Curate 10+ inspiring talks from diverse fields</span>
+                  <span className="text-muted-foreground">
+                    Curate 10+ inspiring talks from diverse fields
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
-                  <span className="text-muted-foreground">Engage 500+ attendees from university and community</span>
+                  <span className="text-muted-foreground">
+                    Engage 500+ attendees from university and community
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
-                  <span className="text-muted-foreground">Foster interdisciplinary connections among students</span>
+                  <span className="text-muted-foreground">
+                    Foster interdisciplinary connections among students
+                  </span>
                 </li>
               </ul>
             </div>
             <div className="bg-card border border-border rounded-lg p-6">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Long-term Impact</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-4">
+                Long-term Impact
+              </h3>
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <span className="text-foreground mr-2">•</span>
-                  <span className="text-muted-foreground">Establish annual tradition of idea-sharing</span>
+                  <span className="text-muted-foreground">
+                    Establish annual tradition of idea-sharing
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-foreground mr-2">•</span>
-                  <span className="text-muted-foreground">Create alumni network of speakers and thinkers</span>
+                  <span className="text-muted-foreground">
+                    Create alumni network of speakers and thinkers
+                  </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-muted-foreground">Inspire innovation and research collaborations</span>
+                  <span className="text-muted-foreground">
+                    Inspire innovation and research collaborations
+                  </span>
                 </li>
               </ul>
             </div>
@@ -103,22 +130,36 @@ export default function AboutTedxUokPage() {
 
         {/* Stats */}
         <div className="mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-6 md:mb-8 text-center">Our Impact</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-6 md:mb-8 text-center">
+            Our Impact
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="text-center p-6 border border-border rounded-lg bg-card">
               <div className="text-4xl font-bold text-primary mb-2">1st</div>
-              <h4 className="text-lg font-bold text-foreground mb-2">Licensed Event</h4>
-              <p className="text-muted-foreground text-sm">First TEDx at University of Kelaniya</p>
+              <h4 className="text-lg font-bold text-foreground mb-2">
+                Licensed Event
+              </h4>
+              <p className="text-muted-foreground text-sm">
+                First TEDx at University of Kelaniya
+              </p>
             </div>
             <div className="text-center p-6 border border-border rounded-lg bg-card">
               <div className="text-4xl font-bold text-primary mb-2">100%</div>
-              <h4 className="text-lg font-bold text-foreground mb-2">Student-Led</h4>
-              <p className="text-muted-foreground text-sm">Organized by passionate volunteers</p>
+              <h4 className="text-lg font-bold text-foreground mb-2">
+                Student-Led
+              </h4>
+              <p className="text-muted-foreground text-sm">
+                Organized by passionate volunteers
+              </p>
             </div>
             <div className="text-center p-6 border border-border rounded-lg bg-card">
               <div className="text-4xl font-bold text-primary mb-2">∞</div>
-              <h4 className="text-lg font-bold text-foreground mb-2">Ideas Shared</h4>
-              <p className="text-muted-foreground text-sm">Unlimited potential for impact</p>
+              <h4 className="text-lg font-bold text-foreground mb-2">
+                Ideas Shared
+              </h4>
+              <p className="text-muted-foreground text-sm">
+                Unlimited potential for impact
+              </p>
             </div>
           </div>
         </div>

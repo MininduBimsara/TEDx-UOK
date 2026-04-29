@@ -1,2 +1,3 @@
 # TEDx-UOK
-Official Website for TEDx UOK
+
+Official Website for TEDxUoK
