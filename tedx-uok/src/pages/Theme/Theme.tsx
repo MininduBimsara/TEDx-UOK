@@ -24,12 +24,12 @@ const subPillars = [
   {
     title: "Resilience",
     description:
-      "Building strength through adversity and emerging stronger from challenges.",
+      "Building strength through transformation and finding the courage to grow from every challenge.",
   },
   {
     title: "Connection",
     description:
-      "Bridging gaps between communities, disciplines, and perspectives.",
+      "Building bridges between different people and ideas to find new, undiscovered links.",
   },
 ];
 
@@ -84,19 +84,7 @@ const Theme = () => {
           </h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              For centuries, progress has begun at the edges of what is known. Every shift in thought and meaningful change has emerged when individuals and communities question existing boundaries and venture beyond familiar frameworks. These moments, often uncertain and uncomfortable, are where transformation begins.
-            </p>
-            <p>
-              {formatTedxText(themeName)} represents these spaces of possibility. It represents the courage to explore without a complete map, to move forward when outcomes are not yet defined, and to challenge assumptions that quietly limit how we think, create, and live. In a world shaped by rapid change and complexity, remaining within well-worn paths is no longer sufficient.
-            </p>
-            <p>
-              At TEDx UoK 2026, {formatTedxText(themeName)} becomes a lens through which ideas are examined and shared. It invites conversations that cross disciplines, disrupt conventions, and reimagine the boundaries between knowledge, identity, and innovation. From scientific inquiry to personal storytelling, the ideas explored under this theme reflect a willingness to question, adapt, and evolve. They highlight the power of exploration across disciplines.
-            </p>
-            <p>
-              This theme is not about abandoning direction, but about recognising that some of the most valuable discoveries occur when we allow curiosity to lead. {formatTedxText(themeName)} acknowledges uncertainty as a space for learning where new perspectives emerge and unexplored connections are formed.
-            </p>
-            <p>
-              TEDx UoK 2026 invites speakers and audiences alike to engage with ideas that challenge the familiar and expand the possible. By stepping beyond established limits, {formatTedxText(themeName)} encourages us to reconsider where we are, where we are going, and what becomes possible when we act with intention.
+              TEDxUoK is a stage where curiosity meets action. We bring together diverse voices from across our community to challenge limits, spark change, and share the ideas that will define our future.
             </p>
           </div>
         </div>
@@ -114,10 +102,7 @@ const Theme = () => {
                 The Urgency of Now
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                We stand at a pivotal moment. Climate change, technological
-                disruption, and social transformation demand that we think
-                differently. The boundaries we once accepted as fixed are
-                revealing themselves as constructs.
+                We are at a turning point. With so much change in technology and the world, we need the courage to think differently. The limits we once accepted are shifting, and staying still is no longer an option.
               </p>
             </div>
             <div>
@@ -125,9 +110,7 @@ const Theme = () => {
                 The Opportunity Ahead
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Every boundary broken creates new possibilities. When we
-                challenge conventional thinking, we don't just solve problems,
-                we discover new questions worth asking.
+                Every time we break a boundary, we see a new horizon. When we challenge the old way of doing things, we don’t just solve problems. We discover new ideas that will shape our future.
               </p>
             </div>
           </div>
@@ -146,8 +129,7 @@ const Theme = () => {
                 For Students
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                The careers of tomorrow don't exist yet, they will be created by
-                those who refuse to be confined by traditional categories.
+                The world is changing fast. We encourage students to look beyond traditional paths and develop the mindset needed for a world that is still evolving.
               </p>
             </div>
             <div className="border-l-2 border-primary pl-8">
@@ -155,19 +137,15 @@ const Theme = () => {
                 For Our Community
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Our community is a place of boundaries socioeconomic and
-                cultural. Yet it is also a place that has always found ways to
-                transcend them.
+                Our community is made of diverse backgrounds and perspectives. It is here that we find the strength to move past boundaries and create a stronger future together.
               </p>
             </div>
             <div className="border-l-2 border-primary pl-8">
               <h3 className="text-xl font-bold text-foreground mb-3">
-                For the World
+                For The World
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Global challenges require global thinking. Understanding how to
-                navigate and reshape these boundaries is the essential skill of
-                our time.
+                Modern global issues can’t be solved with old solutions. We believe that learning to rethink traditional boundaries is an essential skill for everyone today.
               </p>
             </div>
           </div>
